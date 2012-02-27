@@ -1,0 +1,329 @@
+style "gtkwidget"
+{
+xthickness = 1
+ythickness = 2
+fg[NORMAL] = "#888"
+fg[PRELIGHT] = "#a5e12d"
+fg[SELECTED] = "#a5e12d"
+fg[ACTIVE] = "#888"
+fg[INSENSITIVE] = "#555"
+bg[NORMAL] = "#333"
+bg[PRELIGHT] = "#333"
+bg[SELECTED] = "#333"
+bg[ACTIVE] = "#333"
+bg[INSENSITIVE] = "#333"
+base[NORMAL] = "#555"
+base[PRELIGHT] = "#555"
+base[ACTIVE] = "#505050"
+base[SELECTED] = "#444444"
+base[INSENSITIVE] = "#363636"
+text[NORMAL] = "#000"
+text[PRELIGHT] = "#000"
+text[ACTIVE] = "#a5e12d"
+text[SELECTED] = "#a5e12d"
+text[INSENSITIVE] = "#606060"
+GtkWidget::wide-separators = 1
+GtkWidget::draw-border = {0,0,0,0}
+XfceTasklist::minimized-icon-lucency = 0
+GtkWidget::link_color = "#006eff"
+GtkHTML::link-color = "#006eff"
+GtkIMHtml::hyperlink-color = "#006eff"
+GnomeHRef::link-color = "#006eff"
+GtkWidget::visited-link-color = "#930093"
+GtkHTML::visited-link-color = "#930093"
+GtkIMHtml::hyperlink-visited-color = "#930093"
+GtkExpander::expander-size = 7
+GtkExpander::expander-spacing = 2
+GtkExpander::expander-spacing = 2
+GtkHandleBox::shadow-type = GTK_SHADOW_NONE
+GtkHandleBox::shadow = GTK_SHADOW_NONE
+GtkPaned::handle-size = 9
+engine "pixmap"
+{
+image
+{
+function = SHADOW
+shadow = IN
+file = "image/shadowin.gif"
+border = {1,1,2,2}
+stretch = TRUE
+}
+image
+{
+function = SHADOW
+shadow = ETCHED_IN
+file = "image/shadowin.gif"
+border = {1,1,2,2}
+stretch = TRUE
+}
+image
+{
+function = SHADOW
+shadow = OUT
+file = "image/shadowout.gif"
+border = {2,2,2,2}
+stretch = TRUE
+}
+image
+{
+function = SHADOW
+shadow = ETCHED_OUT
+file = "image/shadowout.gif"
+border = {2,2,2,2}
+stretch = TRUE
+}
+image
+{
+function = SHADOW
+shadow = NONE
+file = "image/trans.gif"
+stretch = TRUE
+}
+image
+{
+function = BOX
+detail = "hseparator"
+file = "image/trans.gif"
+stretch = TRUE
+}
+image
+{
+function = BOX
+detail = "vseparator"
+file = "image/trans.gif"
+stretch = TRUE
+}
+image
+{
+function = HANDLE
+detail = "handlebox"
+overlay_file = "image/vhandle.gif"
+overlay_stretch = FALSE
+orientation = VERTICAL
+}
+image
+{
+function = HANDLE
+detail = "handlebox"
+overlay_file = "image/hhandle.gif"
+orientation = HORIZONTAL
+overlay_stretch = FALSE
+}
+image
+{
+function = HANDLE
+detail = "paned"
+overlay_file = "image/vpaned.gif"
+overlay_stretch = FALSE
+orientation = VERTICAL
+}
+image
+{
+function = HANDLE
+detail = "paned"
+overlay_file = "image/hpaned.gif"
+overlay_stretch = FALSE
+orientation = HORIZONTAL
+}
+image
+{
+function = HLINE
+detail = "hseparator"
+file = "image/trans.gif"
+stretch = TRUE
+}
+image
+{
+function = VLINE
+detail = "vseparator"
+file = "image/trans.gif"
+stretch = TRUE
+}
+image
+{
+function = FOCUS
+file = "image/focus.gif"
+border = {0,0,0,0}
+stretch = TRUE
+}
+image
+{
+function = EXPANDER
+state = NORMAL
+expander_style = COLLAPSED
+overlay_file = "image/expanderplus-normal.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = PRELIGHT
+expander_style = COLLAPSED
+overlay_file = "image/expanderplus-prelight.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = ACTIVE
+expander_style = COLLAPSED
+overlay_file = "image/expanderplus-active.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = INSENSITIVE
+expander_style = COLLAPSED
+overlay_file = "image/expanderplus-insensitive.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = NORMAL
+expander_style = SEMI_COLLAPSED
+overlay_file = "image/expanderplus-normal.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = PRELIGHT
+expander_style = SEMI_COLLAPSED
+overlay_file = "image/expanderplus-prelight.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = ACTIVE
+expander_style = SEMI_COLLAPSED
+overlay_file = "image/expanderplus-active.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = INSENSITIVE
+expander_style = SEMI_COLLAPSED
+overlay_file = "image/expanderplus-insensitive.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = NORMAL
+expander_style = EXPANDED
+overlay_file = "image/expanderminus-normal.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = PRELIGHT
+expander_style = EXPANDED
+overlay_file = "image/expanderminus-prelight.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = ACTIVE
+expander_style = EXPANDED
+overlay_file = "image/expanderminus-active.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = INSENSITIVE
+expander_style = EXPANDED
+overlay_file = "image/expanderminus-insensitive.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = NORMAL
+expander_style = SEMI_EXPANDED
+overlay_file = "image/expanderminus-normal.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = PRELIGHT
+expander_style = SEMI_EXPANDED
+overlay_file = "image/expanderminus-prelight.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = ACTIVE
+expander_style = SEMI_EXPANDED
+overlay_file = "image/expanderminus-active.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = EXPANDER
+state = INSENSITIVE
+expander_style = SEMI_EXPANDED
+overlay_file = "image/expanderminus-insensitive.gif"
+overlay_stretch = FALSE
+}
+image
+{
+function = TAB
+state = INSENSITIVE
+detail = "optionmenutab"
+overlay_file = "../gtkarrow/image/arrow-down-insensitive.gif"
+overlay_stretch	= FALSE
+overlay_border = {0,0,0,0}
+}
+image
+{
+function = TAB
+state = NORMAL
+detail = "optionmenutab"
+overlay_file = "../gtkarrow/image/arrow-down-normal.gif"
+overlay_stretch	= FALSE
+overlay_border = {0,0,0,0}
+}
+image
+{
+function = TAB
+state = PRELIGHT
+detail = "optionmenutab"
+overlay_file = "../gtkarrow/image/arrow-down-prelight.gif"
+overlay_stretch	= FALSE
+overlay_border = {0,0,0,0}
+}
+image
+{
+function = TAB
+state = ACTIVE
+detail = "optionmenutab"
+overlay_file = "../gtkarrow/image/arrow-down-active.gif"
+overlay_stretch	= FALSE
+overlay_border = {0,0,0,0}
+}
+}
+}
+class "GtkWidget" style "gtkwidget"
+style "gtklabel"
+{
+engine "mist"
+{
+}
+}
+widget_class "*<GtkLabel>*" style "gtklabel"
+style "gtkimage"
+{
+engine "mist"
+{
+}
+}
+widget_class "*<GtkImage>*" style "gtkimage"

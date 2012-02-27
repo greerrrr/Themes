@@ -1,0 +1,4 @@
+include "gtkwidget.theme"
+include "xfceheaders.theme"
+include "gtkdialogs.theme"
+include "gtkstatusbar.theme"

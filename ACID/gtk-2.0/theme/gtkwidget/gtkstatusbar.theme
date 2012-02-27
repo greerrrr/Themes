@@ -1,0 +1,15 @@
+style "gtkstatusbar"
+{
+GtkStatusbar::shadow-type = GTK_SHADOW_NONE
+engine "pixmap"
+{
+image
+{
+function = RESIZE_GRIP
+detail = "statusbar"
+overlay_file = "image/resizegrip.gif"
+overlay_stretch	= FALSE
+}
+}
+}
+widget_class "*Gtk*Statusbar*" style "gtkstatusbar"

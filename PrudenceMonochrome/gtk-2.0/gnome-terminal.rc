@@ -1,0 +1,8 @@
+style "terminal"
+{
+	text[NORMAL] = @fg_color
+	base[NORMAL] = @bg_color
+}
+
+class "TerminalScreen" style "terminal"
+

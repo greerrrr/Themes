@@ -1,0 +1,31 @@
+style "gtkprogressbar"
+{
+xthickness = 1
+ythickness = 1
+text[PRELIGHT] = "#888"
+fg[PRELIGHT] = "#333"
+GtkProgressBar::min-horizontal-bar-height = 12
+GtkProgressBar::min-horizontal-bar-width = 50
+GtkProgressBar::min-vertical-bar-height = 50
+GtkProgressBar::min-vertical-bar-width = 12
+engine "pixmap"
+{
+image
+{
+function = BOX
+detail = "trough"
+file = "image/progressbar.gif"
+border = {2,2,2,2}
+stretch = TRUE
+}
+image
+{
+function = BOX
+detail = "bar"
+file = "image/progressbarprogress.gif"
+border = {2,2,2,2}
+stretch = TRUE
+}
+}
+}
+class "GtkProgressBar" style "gtkprogressbar"

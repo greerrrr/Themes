@@ -1,0 +1,180 @@
+style "xfcepanel"
+{
+xthickness = 0
+ythickness = 0
+GtkButton::inner-border = {5,5,1,1}
+}
+widget_class "XfcePanelWindow*" style "xfcepanel"
+
+style "xfcepanelsystray"
+{
+xthickness = 0
+ythickness = 0
+engine "pixmap"
+{
+image
+{
+function = ARROW
+state = INSENSITIVE
+overlay_file = "../gtkarrow/image/arrow-up-insensitive.gif"
+overlay_stretch	= FALSE
+arrow_direction	= UP
+}
+image
+{
+function = ARROW
+state = INSENSITIVE
+overlay_file = "../gtkarrow/image/arrow-down-insensitive.gif"
+overlay_stretch	= FALSE
+arrow_direction	= DOWN
+}
+image
+{
+function = ARROW
+state = INSENSITIVE
+overlay_file = "../gtkarrow/image/arrow-left-insensitive.gif"
+overlay_stretch	= FALSE
+arrow_direction	= LEFT
+}
+image
+{
+function = ARROW
+state = INSENSITIVE
+overlay_file = "../gtkarrow/image/arrow-right-insensitive.gif"
+overlay_stretch	= FALSE
+arrow_direction	= RIGHT
+}
+image
+{
+function = ARROW
+state = NORMAL
+overlay_file = "../gtkarrow/image/arrow-up-normal.gif"
+overlay_stretch	= FALSE
+arrow_direction	= UP
+}
+image
+{
+function = ARROW
+state = NORMAL
+overlay_file = "../gtkarrow/image/arrow-down-normal.gif"
+overlay_stretch	= FALSE
+arrow_direction	= DOWN
+}
+image
+{
+function = ARROW
+state = NORMAL
+overlay_file = "../gtkarrow/image/arrow-left-normal.gif"
+overlay_stretch	= FALSE
+arrow_direction	= LEFT
+}
+image
+{
+function = ARROW
+state = NORMAL
+overlay_file = "../gtkarrow/image/arrow-right-normal.gif"
+overlay_stretch	= FALSE
+arrow_direction	= RIGHT
+}
+image
+{
+function = ARROW
+state = ACTIVE
+overlay_file = "../gtkarrow/image/arrow-up-active.gif"
+overlay_stretch	= FALSE
+arrow_direction	= UP
+}
+image
+{
+function = ARROW
+state = ACTIVE
+overlay_file = "../gtkarrow/image/arrow-down-active.gif"
+overlay_stretch	= FALSE
+arrow_direction	= DOWN
+}
+image
+{
+function = ARROW
+state = ACTIVE
+overlay_file = "../gtkarrow/image/arrow-left-active.gif"
+overlay_stretch	= FALSE
+arrow_direction	= LEFT
+}
+image
+{
+function = ARROW
+state = ACTIVE
+overlay_file = "../gtkarrow/image/arrow-right-active.gif"
+overlay_stretch	= FALSE
+arrow_direction	= RIGHT
+}
+image
+{
+function = ARROW
+state = PRELIGHT
+overlay_file = "../gtkarrow/image/arrow-up-prelight.gif"
+overlay_stretch	= FALSE
+arrow_direction	= UP
+}
+image
+{
+function = ARROW
+state = PRELIGHT
+overlay_file = "../gtkarrow/image/arrow-down-prelight.gif"
+overlay_stretch	= FALSE
+arrow_direction	= DOWN
+}
+image
+{
+function = ARROW
+state = PRELIGHT
+overlay_file = "../gtkarrow/image/arrow-left-prelight.gif"
+overlay_stretch	= FALSE
+arrow_direction	= LEFT
+}
+image
+{
+function = ARROW
+state = PRELIGHT
+overlay_file = "../gtkarrow/image/arrow-right-prelight.gif"
+overlay_stretch	= FALSE
+arrow_direction	= RIGHT
+}
+image
+{
+function = SHADOW
+shadow = IN
+file = "../gtkwidget/image/trans.gif"
+stretch = TRUE
+}
+image
+{
+function = SHADOW
+shadow = ETCHED_IN
+file = "../gtkwidget/image/trans.gif"
+stretch = TRUE
+}
+image
+{
+function = SHADOW
+shadow = OUT
+file = "../gtkwidget/image/trans.gif"
+stretch = TRUE
+}
+image
+{
+function = SHADOW
+shadow = ETCHED_OUT
+file = "../gtkwidget/image/trans.gif"
+stretch = TRUE
+}
+image
+{
+function = SHADOW
+shadow = NONE
+file = "../gtkwidget/image/trans.gif"
+stretch = TRUE
+}
+}
+}
+widget_class "*Systray*" style "xfcepanelsystray"

@@ -1,0 +1,4 @@
+include "gtkbutton.theme"
+include "gtkcombobox.theme"
+include "gtkcheckbutton.theme"
+include "gtkradiobutton.theme"

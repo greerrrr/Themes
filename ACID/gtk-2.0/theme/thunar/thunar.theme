@@ -1,0 +1,49 @@
+style "thunarentry"
+{
+engine "pixmap"
+{
+image
+{
+function = SHADOW
+detail = "entry"
+shadow = IN
+file = "image/thunarentry.gif"
+border = {1,0,1,2}
+stretch = TRUE
+}
+image
+{
+function = FOCUS
+file = "../gtkwidget/image/focus.gif"
+border = {0,0,0,0}
+stretch = TRUE
+}
+}
+}
+class "ThunarPathEntry"		style "thunarentry"
+
+style "thunarbutton"
+{
+bg[NORMAL] = "#555"
+bg[PRELIGHT] = "#555"
+bg[SELECTED] = "#555"
+bg[ACTIVE] = "#555"
+bg[INSENSITIVE] = "#555"
+base[NORMAL] = "#555"
+base[PRELIGHT] = "#555"
+base[SELECTED] = "#555"
+base[ACTIVE] = "#555"
+base[INSENSITIVE] = "#555"
+engine "pixmap" 
+{
+image
+{
+function = BOX
+recolorable = TRUE
+file = "image/thunarbutton.gif"
+border = {0,1,1,2}
+stretch = TRUE
+}
+}
+}
+widget_class "*ThunarWindow*ThunarLocationEntry.GtkToggleButton*" style "thunarbutton"

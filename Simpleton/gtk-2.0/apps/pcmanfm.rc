@@ -1,0 +1,61 @@
+#style "pcmanfm-path" # Need to figure out how it works before I activate
+#{
+#	engine = "pixmap"
+#	{
+#		image
+#		{
+#			function       = BOX
+#			recolorable    = TRUE
+#			state          = NORMAL
+#			file           = "Breadcrumbs/adressbar.png"
+#			border         = { 3, 13, 3, 3 }
+#			stretch        = TRUE
+#		}
+#	}
+#}
+
+style "pcmanfm-sidebar" {
+	font_name                                 = "Regular"
+
+	GtkTreeView::odd_row_color                = "#e2e2e2"
+	GtkTreeView::even_row_color               = "#e2e2e2"
+
+	# these make the padding from left window edge a little more sane
+	GtkTreeView::vertical_separator           = 4
+	GtkTreeView::horizontal_separator         = 15
+	GtkTreeView::indent-expanders             = 1 # 1 means TRUE
+	GtkTreeView::expander-size                = 8
+	GtkExpander::expander_spacing             = 16
+	GtkButton::image_spacing                  = 4
+
+	xthickness                                = 0
+	ythickness                                = 1
+}
+
+style "pcmanfm-handle"
+{
+	GtkPaned::handle-size = 1
+	
+	engine "pixmap"
+	{
+		image # for the thin gray line separating the sidepane and viewpane
+		{
+			function	= HANDLE
+			recolorable	= TRUE
+			file		= "Handles/handle-nautilus.png"
+			stretch		= TRUE
+			border 		= { 0, 0, 0, 0 }
+		}
+	}
+}
+
+style "pcmanfm-notebook" {
+	xthickness = 0
+	ythickness = 0
+}
+
+widget_class    "*FmPlacesView*"            style "pcmanfm-sidebar"
+widget          "*FmMainWin*GtkHPaned"      style "pcmanfm-handle"
+widget          "*FmMainWin*GtkNotebook"    style "pcmanfm-notebook"
+#widget_class    "*FmPathEntry*"             style "pcmanfm-path"
+

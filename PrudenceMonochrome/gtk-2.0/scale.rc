@@ -1,0 +1,104 @@
+########################################################################
+# Scale
+########################################################################
+
+style "scale"
+{
+	GtkRange::slider_width = 16
+	
+	engine "pixmap"
+	{
+### Trough ###
+		image
+		{
+			function = BOX
+			detail = "trough"
+			file = "scale/trough-horiz.png"
+			border = {19, 19, 5, 6}
+			stretch	= TRUE
+			overlay_file = "scale/trough-horiz-mid.png"
+	     	overlay_stretch = FALSE
+			orientation	= HORIZONTAL
+		}
+
+		image
+		{
+			function = BOX
+			detail = "trough"
+			file = "scale/trough-vert.png"
+			border = {5, 6, 19, 19}
+			stretch	= TRUE
+			overlay_file = "scale/trough-vert-mid.png"
+	     	overlay_stretch = FALSE
+			orientation	= VERTICAL
+		}
+
+### Slider ###
+		## Normal
+		image
+		{
+			function = SLIDER
+			state = NORMAL
+			overlay_file = "scale/slider.png"
+			overlay_stretch	= FALSE
+			orientation	= HORIZONTAL
+		}
+
+		image
+		{
+			function = SLIDER
+			state = NORMAL
+			overlay_file = "scale/slider.png"
+			overlay_stretch	= FALSE
+			orientation	= VERTICAL
+		}
+		
+		## Prelight
+		image
+		{
+			function = SLIDER
+			state = PRELIGHT
+			overlay_file = "scale/slider-sel.png"
+			overlay_stretch	= FALSE
+			orientation	= HORIZONTAL
+		}
+
+		image
+		{
+			function = SLIDER
+			state = PRELIGHT
+			overlay_file = "scale/slider-sel.png"
+			overlay_stretch	= FALSE
+			orientation	= VERTICAL
+		}
+		
+        ## Insensitive
+		image
+		{
+			function = SLIDER
+			state = INSENSITIVE
+			overlay_file = "scale/slider.png"
+			overlay_stretch	= FALSE
+			orientation	= HORIZONTAL
+		}
+
+		image
+		{
+			function = SLIDER
+			state = INSENSITIVE
+			overlay_file = "scale/slider.png"
+			overlay_stretch	= FALSE
+			orientation	= VERTICAL
+		}
+		
+### Focus ###
+		image 
+		{
+			function = FOCUS
+			file = "null.png"
+		} 
+	}
+}
+
+class "GtkRange*" style "scale"
+

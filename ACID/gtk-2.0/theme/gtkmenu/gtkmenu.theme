@@ -1,0 +1,200 @@
+style "gtkmenu"
+{
+xthickness = 1
+ythickness = 4
+text[NORMAL] = "#888"
+text[PRELIGHT] = "#a5e12d"
+text[SELECTED] = "#a5e12d"
+text[ACTIVE] = "#888"
+text[INSENSITIVE] = "#555"
+GtkTearoffMenuItem::shadow-style = GTK_SHADOW_NONE
+GtkMenuItem::shadow-style = GTK_SHADOW_NONE
+engine "pixmap" 
+{
+image
+{
+function = ARROW
+state = INSENSITIVE
+overlay_file = "../gtkarrow/image/arrow-up-insensitive.gif"
+overlay_stretch	= FALSE
+arrow_direction	= UP
+}
+image
+{
+function = ARROW
+state = INSENSITIVE
+overlay_file = "../gtkarrow/image/arrow-down-insensitive.gif"
+overlay_stretch	= FALSE
+arrow_direction	= DOWN
+}
+image
+{
+function = ARROW
+state = INSENSITIVE
+overlay_file = "../gtkarrow/image/arrow-left-insensitive.gif"
+overlay_stretch	= FALSE
+arrow_direction	= LEFT
+}
+image
+{
+function = ARROW
+state = INSENSITIVE
+overlay_file = "../gtkarrow/image/arrow-right-insensitive.gif"
+overlay_stretch	= FALSE
+arrow_direction	= RIGHT
+}
+image
+{
+function = ARROW
+state = NORMAL
+overlay_file = "../gtkarrow/image/arrow-up-normal.gif"
+overlay_stretch	= FALSE
+arrow_direction	= UP
+}
+image
+{
+function = ARROW
+state = NORMAL
+overlay_file = "../gtkarrow/image/arrow-down-normal.gif"
+overlay_stretch	= FALSE
+arrow_direction	= DOWN
+}
+image
+{
+function = ARROW
+state = NORMAL
+overlay_file = "../gtkarrow/image/arrow-left-normal.gif"
+overlay_stretch	= FALSE
+arrow_direction	= LEFT
+}
+image
+{
+function = ARROW
+state = NORMAL
+overlay_file = "../gtkarrow/image/arrow-right-normal.gif"
+overlay_stretch	= FALSE
+arrow_direction	= RIGHT
+}
+image
+{
+function = ARROW
+state = ACTIVE
+overlay_file = "../gtkarrow/image/arrow-up-active.gif"
+overlay_stretch	= FALSE
+arrow_direction	= UP
+}
+image
+{
+function = ARROW
+state = ACTIVE
+overlay_file = "../gtkarrow/image/arrow-down-active.gif"
+overlay_stretch	= FALSE
+arrow_direction	= DOWN
+}
+image
+{
+function = ARROW
+state = ACTIVE
+overlay_file = "../gtkarrow/image/arrow-left-active.gif"
+overlay_stretch	= FALSE
+arrow_direction	= LEFT
+}
+image
+{
+function = ARROW
+state = ACTIVE
+overlay_file = "../gtkarrow/image/arrow-right-active.gif"
+overlay_stretch	= FALSE
+arrow_direction	= RIGHT
+}
+image
+{
+function = ARROW
+state = PRELIGHT
+overlay_file = "../gtkarrow/image/arrow-up-prelight.gif"
+overlay_stretch	= FALSE
+arrow_direction	= UP
+}
+image
+{
+function = ARROW
+state = PRELIGHT
+overlay_file = "../gtkarrow/image/arrow-down-prelight.gif"
+overlay_stretch	= FALSE
+arrow_direction	= DOWN
+}
+image
+{
+function = ARROW
+state = PRELIGHT
+overlay_file = "../gtkarrow/image/arrow-left-prelight.gif"
+overlay_stretch	= FALSE
+arrow_direction	= LEFT
+}
+image
+{
+function = ARROW
+state = PRELIGHT
+overlay_file = "../gtkarrow/image/arrow-right-prelight.gif"
+overlay_stretch	= FALSE
+arrow_direction	= RIGHT
+}
+image
+{
+function = SHADOW
+shadow = OUT
+file = "image/menushadow.gif"
+border = {1,1,1,1}
+stretch = TRUE
+}
+image
+{
+function = SHADOW
+shadow = NONE
+file = "../gtkwidget/image/trans.gif"
+border = {0,0,0,0}
+stretch = TRUE
+}
+image
+{
+function = SHADOW
+shadow = IN
+file = "../gtkwidget/image/trans.gif"
+border = {0,0,0,0}
+stretch = TRUE
+}
+image
+{
+function = SHADOW
+shadow = OUT
+file = "../gtkwidget/image/trans.gif"
+border = {0,0,0,0}
+stretch = TRUE
+}
+image
+{
+function = HLINE
+detail = "tearoffmenuitem"
+file = "image/tearoffitem.gif"
+border = {1,1,0,0}
+stretch = TRUE
+}
+}
+}
+widget_class "*GtkMenu*" style "gtkmenu"
+widget_class "*GtkTearoffMenuItem*" style "gtkmenu"
+style "gtkmenufont"
+{
+fg[PRELIGHT] = "#a5e12d"
+engine "mist"
+{
+}
+}
+widget_class "*GtkMenu*<GtkLabel>*" style "gtkmenufont"
+style "gtkmenuimage"
+{
+engine "mist"
+{
+}
+}
+widget_class "*GtkMenu*<GtkImage>*" style "gtkmenuimage"

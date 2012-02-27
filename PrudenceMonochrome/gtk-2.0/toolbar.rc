@@ -1,0 +1,34 @@
+style "toolbar"
+{
+	engine "pixmap"
+	{
+		image 
+		{
+	  		function = BOX
+			recolorable = TRUE
+	  		file = "toolbar/toolbar.png"
+	  		border 	= {1,1,1,1}
+        	stretch = TRUE
+		}
+		
+		image 
+		{
+			function = HANDLE
+		    overlay_file = "toolbar/handle-horiz.png"
+		    overlay_stretch = FALSE
+		    orientation	= HORIZONTAL
+		}
+        	
+        image 
+        {
+			function = HANDLE
+		    overlay_file = "toolbar/handle-vert.png"
+		    overlay_stretch = FALSE
+		    orientation	= VERTICAL
+		}
+	}
+}
+
+class "*Toolbar*" style "toolbar"
+class "*Handle*" style "toolbar"
+class "*Paned*" style "toolbar"

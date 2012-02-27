@@ -1,0 +1,6 @@
+include "gtkmenu.theme"
+include "gtkmenubar.theme"
+include "gtkmenuseperator.theme"
+include "gtkcheckmenuitem.theme"
+include "gtkradiomenuitem.theme"
+

@@ -1,0 +1,284 @@
+style "gtknotebook"
+{
+xthickness = 3
+ythickness = 4
+GtkNotebook::tab-curvature = 3
+GtkNotebook::tab-overlap = 1
+bg[NORMAL] = "#333"
+engine "pixmap"
+{
+image 
+{
+function = BOX_GAP
+file = "image/tabbgtop.gif" 
+detail = "notebook"
+border = {2,2,0,2}
+stretch = TRUE
+gap_file = "image/tabbgtopcenter.gif"
+gap_border = {2,2,0,0}
+gap_start_file = "image/tabbgtopleft.gif"
+gap_start_border = {2,0,0,0}
+gap_end_file = "image/tabbgtopright.gif"
+gap_end_border = {0,2,0,0}
+gap_side = TOP
+}
+image 
+{
+function = EXTENSION
+state = ACTIVE
+file = "image/tabtopactive.gif"
+border = {2,2,2,0}
+stretch = TRUE
+gap_side = BOTTOM
+}
+image 
+{
+function = EXTENSION
+file = "image/tabtopnormal.gif"
+border = {2,2,2,0}
+stretch = TRUE
+gap_side = BOTTOM
+}
+image 
+{
+function = BOX_GAP
+file = "image/tabbgbottom.gif" 
+detail = "notebook"
+border = {2,2,2,0}
+stretch = TRUE
+gap_file = "image/tabbgbottomcenter.gif"
+gap_border = {2,2,0,0}
+gap_start_file = "image/tabbgbottomleft.gif"
+gap_start_border = {2,0,0,0}
+gap_end_file = "image/tabbgbottomright.gif"
+gap_end_border = {0,2,0,0}
+gap_side = BOTTOM
+}
+image 
+{
+function = EXTENSION
+state = ACTIVE
+file = "image/tabbottomactive.gif"
+border = {2,2,0,2}
+stretch = TRUE
+gap_side = TOP
+}
+image 
+{
+function = EXTENSION
+file = "image/tabbottomnormal.gif"
+border = {2,2,0,2}
+stretch = TRUE
+gap_side = TOP
+}
+image 
+{
+function = BOX_GAP
+file = "image/tabbgleft.gif" 
+detail = "notebook"
+border = {0,2,2,2}
+stretch = TRUE
+gap_file = "image/tabbgleftcenter.gif"
+gap_border = {0,0,2,2}
+gap_start_file = "image/tabbglefttop.gif"
+gap_start_border = {0,0,2,0}
+gap_end_file = "image/tabbgleftbottom.gif"
+gap_end_border = {0,0,0,2}
+gap_side = LEFT
+}
+image 
+{
+function = EXTENSION
+state = ACTIVE
+file = "image/tableftactive.gif"
+border = {2,0,2,2}
+stretch = TRUE
+gap_side = RIGHT
+}
+image 
+{
+function = EXTENSION
+file = "image/tableftnormal.gif"
+border = {2,0,2,2}
+stretch = TRUE
+gap_side = RIGHT
+}
+image 
+{
+function = BOX_GAP
+file = "image/tabbgright.gif" 
+detail = "notebook"
+border = {2,0,2,2}
+stretch = TRUE
+gap_file = "image/tabbgrightcenter.gif"
+gap_border = {0,0,2,2}
+gap_start_file = "image/tabbgrighttop.gif"
+gap_start_border = {0,0,2,0}
+gap_end_file = "image/tabbgrightbottom.gif"
+gap_end_border = {0,0,0,2}
+gap_side = RIGHT
+}
+image 
+{
+function = EXTENSION
+state = ACTIVE
+file = "image/tabrightactive.gif"
+border = {0,2,2,2}
+stretch = TRUE
+gap_side = LEFT
+}
+image 
+{
+function = EXTENSION
+file = "image/tabrightnormal.gif"
+border = {0,2,2,2}
+stretch = TRUE
+gap_side = LEFT
+}
+image
+{
+function = ARROW
+state = INSENSITIVE
+overlay_file = "../gtkarrow/image/arrow-up-insensitive.gif"
+overlay_stretch	= FALSE
+arrow_direction	= UP
+}
+image
+{
+function = ARROW
+state = INSENSITIVE
+overlay_file = "../gtkarrow/image/arrow-down-insensitive.gif"
+overlay_stretch	= FALSE
+arrow_direction	= DOWN
+}
+image
+{
+function = ARROW
+state = INSENSITIVE
+overlay_file = "../gtkarrow/image/arrow-left-insensitive.gif"
+overlay_stretch	= FALSE
+arrow_direction	= LEFT
+}
+image
+{
+function = ARROW
+state = INSENSITIVE
+overlay_file = "../gtkarrow/image/arrow-right-insensitive.gif"
+overlay_stretch	= FALSE
+arrow_direction	= RIGHT
+}
+image
+{
+function = ARROW
+state = NORMAL
+overlay_file = "../gtkarrow/image/arrow-up-normal.gif"
+overlay_stretch	= FALSE
+arrow_direction	= UP
+}
+image
+{
+function = ARROW
+state = NORMAL
+overlay_file = "../gtkarrow/image/arrow-down-normal.gif"
+overlay_stretch	= FALSE
+arrow_direction	= DOWN
+}
+image
+{
+function = ARROW
+state = NORMAL
+overlay_file = "../gtkarrow/image/arrow-left-normal.gif"
+overlay_stretch	= FALSE
+arrow_direction	= LEFT
+}
+image
+{
+function = ARROW
+state = NORMAL
+overlay_file = "../gtkarrow/image/arrow-right-normal.gif"
+overlay_stretch	= FALSE
+arrow_direction	= RIGHT
+}
+image
+{
+function = ARROW
+state = ACTIVE
+overlay_file = "../gtkarrow/image/arrow-up-active.gif"
+overlay_stretch	= FALSE
+arrow_direction	= UP
+}
+image
+{
+function = ARROW
+state = ACTIVE
+overlay_file = "../gtkarrow/image/arrow-down-active.gif"
+overlay_stretch	= FALSE
+arrow_direction	= DOWN
+}
+image
+{
+function = ARROW
+state = ACTIVE
+overlay_file = "../gtkarrow/image/arrow-left-active.gif"
+overlay_stretch	= FALSE
+arrow_direction	= LEFT
+}
+image
+{
+function = ARROW
+state = ACTIVE
+overlay_file = "../gtkarrow/image/arrow-right-active.gif"
+overlay_stretch	= FALSE
+arrow_direction	= RIGHT
+}
+image
+{
+function = ARROW
+state = PRELIGHT
+overlay_file = "../gtkarrow/image/arrow-up-prelight.gif"
+overlay_stretch	= FALSE
+arrow_direction	= UP
+}
+image
+{
+function = ARROW
+state = PRELIGHT
+overlay_file = "../gtkarrow/image/arrow-down-prelight.gif"
+overlay_stretch	= FALSE
+arrow_direction	= DOWN
+}
+image
+{
+function = ARROW
+state = PRELIGHT
+overlay_file = "../gtkarrow/image/arrow-left-prelight.gif"
+overlay_stretch	= FALSE
+arrow_direction	= LEFT
+}
+image
+{
+function = ARROW
+state = PRELIGHT
+overlay_file = "../gtkarrow/image/arrow-right-prelight.gif"
+overlay_stretch	= FALSE
+arrow_direction	= RIGHT
+}
+image 
+{
+function = FOCUS
+file = "../gtkwidget/image/focus.gif"
+stretch = TRUE
+border = {0,0,0,0}
+}
+}
+}
+class "GtkNotebook" style "gtknotebook"
+style "gtknotebooklabel"
+{
+fg[NORMAL] = "#a5e12d"
+bg[NORMAL] = "#333"
+engine "mist"
+{
+}
+}
+widget_class "*.<GtkNotebook>.<GtkLabel>" style "gtknotebooklabel"

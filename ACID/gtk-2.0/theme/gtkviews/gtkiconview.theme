@@ -1,0 +1,22 @@
+style "gtkiconview"
+{
+fg[SELECTED] = "#a5e12d"
+fg[ACTIVE] = "#a5e12d"
+base[NORMAL] = "#242424"
+base[SELECTED] = "#333"
+base[ACTIVE] = "#333"
+GtkIconView::selection-box-alpha = 60
+GtkIconView::selection_box_color = "#333333"
+#ThunarIconView::selection-box-alpha = 60
+#ThunarIconView::selection_box_color = "#000"
+#ExoIconView::selection-box-alpha = 60
+#ExoIconView::selection_box_color = "#a5e12d"
+XfdesktopIconView::label-alpha = 80
+engine "mist" 
+{
+}
+}
+widget_class "*GtkIconView*" style "gtkiconview"
+widget_class "*XfceIconView*" style "gtkiconview"
+#widget_class "*ThunarIconView*" style "gtkiconview"
+#widget_class "*ExoIconView*" style "gtkiconview"

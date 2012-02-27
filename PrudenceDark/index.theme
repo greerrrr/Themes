@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=PrudenceDark Next Generation
+Type=X-GNOME-Metatheme
+Comment=
+
+[X-GNOME-Metatheme]
+GtkTheme=PrudenceDark
+MetacityTheme=Prudence
+IconTheme=elementary-mono-dark
+CursorTheme=OpenZone_Black
+CursorSize=1
+NotificationTheme=ubuntu
+

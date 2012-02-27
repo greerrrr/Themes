@@ -1,0 +1,19 @@
+* {
+-GtkMenu-arrow-scaling: 0.5;
+-GtkMenuItem-selected-shadow-type: none;
+}
+
+GtkMenu GtkMenuItem {
+border-width: 0;
+color: #888;
+background-color: #333;
+}
+
+GtkMenu GtkMenuItem :hover{
+color: #a5e12d;
+background-color: #333;
+}
+
+GtkMenu GtkMenuItem :insensitive{
+color: #555;
+}

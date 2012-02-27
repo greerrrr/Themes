@@ -1,0 +1,31 @@
+########################################################################
+# Statusbar
+########################################################################
+
+style "statusbar"
+{
+	GtkStatusbar::shadow_type = GTK_SHADOW_NONE
+	
+	engine "pixmap"
+	{
+### Statusbar ###
+		image
+		{
+			function = RESIZE_GRIP
+			detail = "statusbar"
+			overlay_file = "statusbar/resizer.png"
+			overlay_stretch	= FALSE
+		}
+
+		image
+		{
+			function = SHADOW
+            file = "null.png"
+		}
+	}
+}
+
+class "GtkStatusbar*" style "statusbar"
+widget_class "*GtkStatusbar*.<GtkFrame>*" style "statusbar"
+widget_class "*Gedit*.<GtkFrame>*" style "statusbar"
+

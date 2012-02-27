@@ -1,0 +1,20 @@
+style "gedit-frame"
+{	
+	engine "pixmap"
+	{
+ 		image
+		{
+			function = SHADOW
+		}
+	}
+}
+
+style "gedit-statusbar"
+{	
+	ythickness = 0
+}
+
+widget_class "*Gedit*.<GtkFrame>*"           style "gedit-frame"
+widget_class "*Gedit*.<GtkScrolledWindow>"   style "murrine-thin"
+widget_class "*Gedit*.<GtkArrow>*"           style:highest "murrine-default"
+widget_class "*Gedit*.<GtkStatusbar>*"       style "gedit-statusbar"

@@ -1,0 +1,28 @@
+gtk-button-images = 0
+gtk-theme-name = ACID
+gtk-menu-images = 0
+gtk-menu-popup-delay = 50
+gtk-enable-mnemonics = 0
+gtk-auto-mnemonics = 0
+gtk-enable-accels = 1
+gtk-error-bell = 0
+gtk-toolbar-style = GTK_TOOLBAR_ICONS
+gtk-icon-sizes = "panel-menu=16,16:gtk-dialog=64,64:gtk-small-toolbar=16,16:gtk-large-toolbar=16,16:gtk-menu=16,16:gtk-button=16,16"
+####################################
+include "theme/gtkwidget/index.theme"
+include "theme/gtkviews/index.theme"
+include "theme/gtkbutton/index.theme"
+include "theme/gtkentry/index.theme"
+include "theme/gtkspinbutton/index.theme"
+include "theme/gtkmenu/index.theme"
+include "theme/gtktoolbar/index.theme"
+include "theme/gtknotebook/index.theme"
+include "theme/gtkprogressbar/index.theme"
+include "theme/gtkframe/index.theme"
+include "theme/gtkrange/index.theme"
+include "theme/chromium/index.theme"
+include "theme/thunar/index.theme"
+include "theme/xfcepanel/index.theme"
+include "theme/gtkarrow/index.theme"
+include "theme/gtktooltip/index.theme"
+include "theme/gtkdrawingarea/index.theme"

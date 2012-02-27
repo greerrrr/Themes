@@ -1,0 +1,18 @@
+* {
+-GtkMenuBar-internal-padding: 0;
+-GtkMenuBar-shadow-type: none;
+}
+GtkMenuBar {
+	color: #a5e12d;
+	border-width: 0 0 2 0;
+	border-style: solid;
+	border-color: #a5e12d;
+}
+
+GtkMenuBar .menubar.menuitem:hover,
+.menubar .menuitem GtkLabel:hover {
+	color: #333;
+	background-color: #a5e12d;
+	border-width: 0;
+	border-color: #a5e12d;
+}
