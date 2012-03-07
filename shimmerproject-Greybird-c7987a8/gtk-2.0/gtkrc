@@ -119,7 +119,7 @@ style "murrine-default"
 	{
 		animation           = TRUE
 		arrowstyle          = 2                 # 0 = normal arrows, 1 = filled arrows		
-		border_shades       = { 1.2, 1.0 }      # gradient to draw on border
+		border_shades       = {1.2,1.0}         # gradient to draw on border
 		cellstyle	    = 0
 		colorize_scrollbar  = FALSE		
 		comboboxstyle       = 0                 # 0 = normal combobox, 1 = colorized combobox below arrow		
