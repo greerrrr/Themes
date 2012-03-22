@@ -1,0 +1,208 @@
+################################################
+# PANELS
+################################################
+
+# Note: Uncommenting means to delete the "#" at the beginning of a line. Commenting out means to add a "#" at the beginning of a line. The "#" tells the theme wether to ignore the line or not.
+
+style "theme-panel"
+{
+	xthickness            	= 0
+	ythickness            	= 0 # If removed the panel will get a 1px border
+	bg_pixmap[NORMAL]		= "/Panel/panel-bg.png" # Disable for normal panel backgrounds.
+
+	bg[SELECTED]			= shade (0.85, @selected_bg_color) # Makes selected items dark.
+	bg[NORMAL]			= "#EEEEEE" # Panel background.
+	bg[PRELIGHT]			= shade (0.85, @selected_bg_color) # Makes panel button prelight dark.
+	bg[ACTIVE]			= shade (0.60, @bg_color) # Makes active buttons dark.
+	bg[INSENSITIVE]			= "#3C3C3C"
+	fg[NORMAL]			= "#f5f5f5" # Panel text.
+	fg[PRELIGHT]			= "#ffffff"  # Makes prelighted text colored.
+	fg[SELECTED]			= "#ffffff"  # Makes prelighted text colored.
+	fg[ACTIVE]			= "#ffffff"  # Makes active text colored.
+	fg[INSENSITIVE]			= "#f5f5f5" # Color for insensitive text.
+	text[NORMAL]			= "#f5f5f5"
+	text[PRELIGHT]			= "#ffffff"  # Makes prelighted text colored.
+	text[SELECTED]			= "#ffffff"  # Makes prelighted text colored.
+	text[ACTIVE]			= "#ffffff"  # Makes active text colored.
+	text[INSENSITIVE]		= "#f5f5f5"
+
+	engine "murrine" {
+		roundness = 0 # This sets the roundness of panel items.
+	}
+}
+
+##################### PANEL BUTTONS ###############################
+
+style "panelbuttons"
+{
+
+  fg[NORMAL]        = "#f5f5f5" # 
+  fg[PRELIGHT]      = "#ffffff" # text on buttons (hover)
+  fg[ACTIVE]        = "#f5f5f5" # text on unfocused tabs
+  
+  
+  xthickness            			= 2
+  ythickness            			= 1
+
+	GtkWidget::focus_padding = 2
+
+	engine "pixmap" {
+      
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state			= NORMAL
+			file            	= "Panel/panel-button-inactive.png"
+			border          	= { 4, 4, 4, 4 }
+			stretch         	= TRUE			
+		}
+		
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state			= PRELIGHT
+			file            	= "Panel/panel-button-hover.png"
+			border          	= { 2, 2, 2, 2 }
+			stretch         	= TRUE
+		}
+
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			shadow			= OUT
+			state			= PRELIGHT
+			file            	= "Panel/panel-button-hover.png"
+			border          	= { 4, 4, 4, 4 }
+			stretch         	= TRUE
+			
+		}
+		
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			shadow			= IN
+			state			= PRELIGHT
+			file            	= "Panel/panel-button-hover.png"
+			border          	= { 4, 4, 4, 4 }
+			stretch         	= TRUE
+			
+		}
+		
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state			= ACTIVE
+			file            	= "Panel/panel-button-active.png"
+			border          	= { 4, 4, 4, 4 }
+			stretch         	= TRUE
+		}  
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state			= INSENSITIVE
+			file            	= "Panel/panel-button-inactive.png"
+			border          	= { 4, 4, 4, 4 }
+			stretch         	 = TRUE
+		}  
+
+	}
+
+}
+
+style "theme-panel-light"
+{
+	fg[NORMAL]	= @fg_color
+}
+
+# Panel settings. Do not change.
+widget "*PanelWidget*"				style "panelbuttons"
+widget "*PanelApplet*"				style "panelbuttons"
+widget "*fast-user-switch*"			style "theme-panel"
+widget "*gdm-user-switch*"			style "theme-panel"
+widget "*CPUFreq*Applet*"			style "theme-panel"
+widget "*indicator-applet*"			style "theme-panel"
+class "PanelApp*"				style "theme-panel"
+widget_class "*PanelButton*." 			style "panelbuttons"
+class "PanelToplevel*"				style "theme-panel"
+widget_class "*PanelToplevel*"			style "theme-panel"
+#widget_class "*Mail*"				style "theme-panel" # Disabled to fix Evolution bug.
+#class "*Panel*"				style "theme-panel" # Disabled to fix bug.
+widget_class "*notif*"				style "theme-panel"
+widget_class "*Notif*"				style "theme-panel"
+widget_class "*Tray*"				style "theme-panel" 
+widget_class "*tray*"				style "theme-panel"
+widget_class "*computertemp*"			style "theme-panel"
+widget_class "*Applet*Tomboy*"			style "theme-panel"
+widget_class "*Applet*Netstatus*"		style "theme-panel"
+
+# Fix for Gnome-GlobalMenu, not sure if there's a better solution atm
+widget "*GlobalMenu*"		style "theme-panel"
+
+# Fixes for tooltip text in some apps.
+widget_class "*Notif*Beagle*"	style "theme-panel-light"
+widget_class "*Notif*Brasero*"	style "theme-panel-light"
+
+# XFCE panel theming.
+widget "*Xfce*Panel*"		style "theme-panel"
+class "*Xfce*Panel*"		style "theme-panel"
+
+# The following removes the arrows from the panel
+
+style "panel-arrow-remove"
+
+{
+engine "pixmap"
+	{
+	image
+	{
+		function	= ARROW
+		recolorable	= TRUE
+		overlay_file	= "Panel/arrow-blank.png"
+		overlay_border	= {2,2,2,2}
+		overlay_stretch	= FALSE
+		arrow_direction	= UP
+	}
+
+	image
+	{
+		function	= ARROW
+		recolorable	= TRUE
+		overlay_file	= "Panel/arrow-blank.png"
+		overlay_border	= {2,2,2,2}
+		overlay_stretch	= FALSE
+		arrow_direction	= DOWN
+	}
+	}
+}
+
+widget_class "*PanelToplevel*" 			style "panel-arrow-remove"
+
+# Removes the ugly panel handle when a pixmap panel is used
+
+style "handle" {
+engine "pixmap" {
+	image
+	{
+		function		= HANDLE
+		file              	= "Panel/handle-v.png"
+		border            	= { 0, 0, 0, 0 }
+		stretch           	= TRUE
+		orientation		= VERTICAL
+}
+	image
+	{
+		function		= HANDLE
+		file              	= "Panel/handle-h.png"
+		border            	= { 0, 0, 0, 0 }
+		stretch           	= TRUE
+		orientation		= HORIZONTAL
+	}
+	}
+}
+class "PanelAppletFrame" style "handle"

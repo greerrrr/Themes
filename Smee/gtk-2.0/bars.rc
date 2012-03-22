@@ -1,0 +1,75 @@
+### PIXMAP MENUBAR ###
+style "theme-menubar"		
+
+{
+  xthickness			= 1
+  ythickness			= 2
+
+	engine "pixmap"
+	{
+		image
+		{
+			function	= BOX
+			state = NORMAL
+			file		= "Bars/menubar.png"
+			border	= { 10, 10, 1, 1 }
+			stretch	= TRUE
+    		}
+
+		image
+		{
+			function	= BOX
+			state = ACTIVE
+			file		= "Bars/menubar.png"
+			border	= { 10, 10, 1, 1 }
+			stretch	= TRUE
+    		}
+
+		image
+		{
+			function	= BOX
+			state = INSENSITIVE
+			file		= "Bars/menubar.png"
+			border	= { 10, 10, 1, 1 }
+			stretch	= TRUE
+    		}
+ 	}
+}
+
+### PIXMAP TOOLBAR ###
+style "theme-toolbar"		
+
+{
+  xthickness			= 1
+  ythickness			= 2
+
+	engine "pixmap"
+	{
+		image
+		{
+			function	= BOX
+			state = NORMAL
+			file		= "Bars/toolbar.png"
+			border	= { 10, 10, 1, 1 }
+			stretch	= TRUE
+    		}
+
+		image
+		{
+			function	= BOX
+			state = ACTIVE
+			file		= "Bars/toolbar.png"
+			border	= { 10, 10, 1, 1 }
+			stretch	= TRUE
+    		}
+
+		image
+		{
+			function	= BOX
+			state = INSENSITIVE
+			file		= "Bars/toolbar.png"
+			border	= { 10, 10, 1, 1 }
+			stretch	= TRUE
+    		}
+ 	}
+}
